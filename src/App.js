@@ -20,7 +20,7 @@ function App() {
   });
 
   var channel = pusher.subscribe('message');
-  channel.bind('inserted', (newMessage) => {
+  channel.bind('inserted', (newMessage) => { 
   setMessages([...messages, newMessage])
   });
 
